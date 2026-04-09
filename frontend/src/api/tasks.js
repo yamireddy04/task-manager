@@ -1,5 +1,4 @@
-const BASE = 'https://task-manager-71b7.onrender.com';
-
+const BASE = `${process.env.https://task-manager-71b7.onrender.com}/tasks`;
 export const fetchTasks = async (filter = 'all') => {
   const query = filter !== 'all' ? `?status=${filter}` : '';
   const res = await fetch(`${BASE}${query}`);
@@ -45,4 +44,3 @@ export const deleteTask = async (id) => {
   const res = await fetch(`${BASE}/${id}`, { method: 'DELETE' });
   if (!res.ok) throw new Error('Failed to delete task');
 };
-const BASE = `${process.env.https://task-manager-71b7.onrender.com}/tasks`;
