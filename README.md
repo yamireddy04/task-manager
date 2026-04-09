@@ -2,6 +2,8 @@
 
 A full-stack Task Manager app built with **React** (frontend) and **Node.js + Express** (backend).
 
+### 🌐 Live : https://task-manager-phi-lime.vercel.app/
+
 ---
 
 ## Project Structure
