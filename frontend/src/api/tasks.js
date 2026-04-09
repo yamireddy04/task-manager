@@ -1,4 +1,4 @@
-const BASE = '/tasks';
+const BASE = 'https://task-manager-71b7.onrender.com';
 
 export const fetchTasks = async (filter = 'all') => {
   const query = filter !== 'all' ? `?status=${filter}` : '';
