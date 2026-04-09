@@ -1,4 +1,5 @@
-const BASE = `$ {process.env.https://task-manager-71b7.onrender.com}/tasks`;
+const BASE = 'https://task-manager-71b7.onrender.com/tasks';
+
 export const fetchTasks = async (filter = 'all') => {
   const query = filter !== 'all' ? `?status=${filter}` : '';
   const res = await fetch(`${BASE}${query}`);
