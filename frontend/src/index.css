@@ -1,0 +1,26 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0f0f11;
+  --surface: #18181c;
+  --border: #2a2a30;
+  --accent: #e8ff5a;
+  --accent-dim: #b8cc3a;
+  --text: #f0f0f0;
+  --text-muted: #6b6b78;
+  --danger: #ff5a5a;
+  --success: #5affa0;
+  --radius: 10px;
+  --font-head: 'Syne', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  min-height: 100vh;
+}
+
+button { cursor: pointer; font-family: var(--font-mono); }
+input { font-family: var(--font-mono); }
